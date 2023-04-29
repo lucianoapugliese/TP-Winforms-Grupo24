@@ -6,3 +6,4 @@ C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms
 C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.CoreCompileInputs.cache
 C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.exe
 C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.pdb
+C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.AssemblyReference.cache
