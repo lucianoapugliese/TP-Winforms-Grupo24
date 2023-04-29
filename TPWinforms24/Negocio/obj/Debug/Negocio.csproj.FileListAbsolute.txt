@@ -1,0 +1,6 @@
+C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\Negocio.dll
+C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.dll
+C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.pdb
