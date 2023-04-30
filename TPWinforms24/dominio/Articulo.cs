@@ -8,5 +8,13 @@ namespace dominio
 {
     public class Articulo
     {
+        private int Id;
+        private string Codigo;
+        private string Nombre;
+        private string Descripcion;
+        private int IdMarca;
+        private int IdCategoria;
+        private decimal Precio;
+        
     }
 }
