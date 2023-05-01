@@ -10,3 +10,9 @@ C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\dominio\ob
 C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.dll
 C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.pdb
+C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\dominio\bin\Debug\dominio.dll
+C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\dominio\bin\Debug\dominio.pdb
+C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.dll
+C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.pdb
