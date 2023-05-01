@@ -4,3 +4,12 @@ C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms
 C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
 C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.dll
 C:\Users\Mati\Desktop\Programacion 3\Tp2-WinForms\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\Negocio.dll
+C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\dominio.dll
+C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\dominio.pdb
+C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.dll
+C:\Users\Mati\Desktop\Programacion 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.pdb
