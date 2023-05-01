@@ -7,10 +7,10 @@ using System.ComponentModel;
 
 namespace dominio
 {
-    class Categoria
+   public class Categoria
     {
-        public int ID { get; set; }
         [DisplayName("Número")]
+        public int ID { get; set; }
         public string Descripcion { get; set; }
 
     }

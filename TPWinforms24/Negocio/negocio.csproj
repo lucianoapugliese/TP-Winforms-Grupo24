@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoDatos.cs" />
+<<<<<<< HEAD
     <Compile Include="marcaNegocio.cs" />
+=======
+    <Compile Include="CategoriaNegocio.cs" />
+>>>>>>> b04cdff225b4fbcebe1bba8f072515a6ff95ce33
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
