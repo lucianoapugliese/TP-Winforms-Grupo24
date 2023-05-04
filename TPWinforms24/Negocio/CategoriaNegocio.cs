@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using dominio;
 
-namespace Negocio
+namespace negocio
 {
     public class CategoriaNegocio
     {
