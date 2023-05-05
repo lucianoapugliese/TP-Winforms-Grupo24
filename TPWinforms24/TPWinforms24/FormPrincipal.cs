@@ -26,17 +26,15 @@ namespace TPWinforms24
             articulos = articuloNegocio.listar();
             dgvArticulos.DataSource = articulos;
             //dgvArticulos.Columns[""]
-
+            btnAnterior.Enabled = false;
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            btnSiguiente.Enabled = seleccionado.Imagenes.Count > 1 ? true : false;
         }
 
         private void pbArticulo_Click(object sender, EventArgs e)
         {
             Articulo articulo = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            foreach (Imagen item in articulo.Imagenes)
-            {
-                cargarImagen(item.ImagenUrl);
-
-            }
+            cargarImagen(articulo.Imagenes[0].ImagenUrl);
         }
 
         private void cargarImagen(string url)
@@ -60,7 +58,11 @@ namespace TPWinforms24
             //    cargarImagen(item.ImagenUrl);
 
             //}
+            btnSiguiente.Enabled = seleccionado.Imagenes.Count > 1 ? true : false;
             cargarImagen(seleccionado.Imagenes[0].ImagenUrl);
+            //if (seleccionado.Imagenes.Count > 0)
+            //    btnSiguiente.Enabled = true;
+            //else btnSiguiente.Enabled = false;
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)
@@ -69,8 +71,13 @@ namespace TPWinforms24
             if (pbArticulo.ImageLocation != seleccionado.Imagenes[0].ImagenUrl)
             {
                 string urlACargar = seleccionado.Imagenes[seleccionado.Imagenes.FindIndex(x => x.ImagenUrl == pbArticulo.ImageLocation) - 1].ImagenUrl;
+                if (pbArticulo.ImageLocation == seleccionado.Imagenes[1].ImagenUrl)
+                    btnAnterior.Enabled = false;
+                btnSiguiente.Enabled = true;
                 cargarImagen(urlACargar);
             }
+            //else
+            //    btnAnterior.Enabled = false;
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
@@ -79,13 +86,17 @@ namespace TPWinforms24
             if (pbArticulo.ImageLocation != seleccionado.Imagenes[seleccionado.Imagenes.Count - 1].ImagenUrl)
             {
                 string urlACargar = seleccionado.Imagenes[seleccionado.Imagenes.FindIndex(x => x.ImagenUrl == pbArticulo.ImageLocation) + 1].ImagenUrl;
+                btnAnterior.Enabled = true;
+                if (pbArticulo.ImageLocation == seleccionado.Imagenes[seleccionado.Imagenes.Count - 2].ImagenUrl)
+                    btnSiguiente.Enabled = false;
                 cargarImagen(urlACargar);
             }
+            //else
+            //    btnSiguiente.Enabled = false;
         }
 
         private void dgvArticulos_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             if (this.dgvArticulos.Columns[e.ColumnIndex].Name == "Precio")
             {
                 if (e.Value != null)
@@ -94,6 +105,10 @@ namespace TPWinforms24
                     string precio = aux.ToString();
                     precio = "$ " + precio;
                     e.Value = precio;
+
+                    //decimal DosDecimal;
+                    //DosDecimal = (decimal)datos.Lector["precio"];
+                    //aux.Precio = Decimal.Parse(DosDecimal.ToString("0.00"));
                 }
             }
         }

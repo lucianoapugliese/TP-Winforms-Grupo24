@@ -32,11 +32,17 @@ namespace negocio
                     if (!(datos.Lector["Categoria"] is DBNull))
                         articulo.Categoria.Descripcion = (string)datos.Lector["Categoria"];
                     else articulo.Categoria.Descripcion = " ";
-                    articulo.Precio = (decimal)datos.Lector["Precio"];
+                    decimal DosDecimal;
+                    DosDecimal = (decimal)datos.Lector["Precio"];
+
+                    articulo.Precio = Math.Truncate(DosDecimal * 100) / 100;
                     articulo.Imagenes = imagen.listar(articulo.Id);
                     articulos.Add(articulo);
                 }
                 return articulos;
+                //decimal DosDecimal;
+                //DosDecimal = (decimal)datos.Lector["precio"];
+                //aux.Precio = Decimal.Parse(DosDecimal.ToString("0.00"));
             }
             catch (Exception ex)
             {

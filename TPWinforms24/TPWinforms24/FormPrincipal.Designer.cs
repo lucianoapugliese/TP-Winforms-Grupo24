@@ -38,19 +38,20 @@
             // 
             // dgvArticulos
             // 
+            this.dgvArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArticulos.Location = new System.Drawing.Point(12, 12);
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.RowTemplate.Height = 24;
-            this.dgvArticulos.Size = new System.Drawing.Size(843, 456);
+            this.dgvArticulos.Size = new System.Drawing.Size(891, 456);
             this.dgvArticulos.TabIndex = 0;
             this.dgvArticulos.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvArticulos_CellFormatting);
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
             // pbArticulo
             // 
-            this.pbArticulo.Location = new System.Drawing.Point(877, 12);
+            this.pbArticulo.Location = new System.Drawing.Point(909, 12);
             this.pbArticulo.Name = "pbArticulo";
             this.pbArticulo.Size = new System.Drawing.Size(456, 456);
             this.pbArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -61,7 +62,7 @@
             // btnAnterior
             // 
             this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnterior.Location = new System.Drawing.Point(877, 491);
+            this.btnAnterior.Location = new System.Drawing.Point(909, 491);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(125, 51);
             this.btnAnterior.TabIndex = 2;
@@ -72,7 +73,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(1105, 491);
+            this.btnSiguiente.Location = new System.Drawing.Point(1137, 491);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(125, 51);
             this.btnSiguiente.TabIndex = 2;
@@ -84,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1345, 554);
+            this.ClientSize = new System.Drawing.Size(1482, 554);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.pbArticulo);
