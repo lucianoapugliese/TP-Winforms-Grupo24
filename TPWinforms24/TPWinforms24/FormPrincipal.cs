@@ -55,10 +55,46 @@ namespace TPWinforms24
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            foreach (Imagen item in seleccionado.Imagenes)
-            {
-                cargarImagen(item.ImagenUrl);
+            //foreach (Imagen item in seleccionado.Imagenes)
+            //{
+            //    cargarImagen(item.ImagenUrl);
 
+            //}
+            cargarImagen(seleccionado.Imagenes[0].ImagenUrl);
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            if (pbArticulo.ImageLocation != seleccionado.Imagenes[0].ImagenUrl)
+            {
+                string urlACargar = seleccionado.Imagenes[seleccionado.Imagenes.FindIndex(x => x.ImagenUrl == pbArticulo.ImageLocation) - 1].ImagenUrl;
+                cargarImagen(urlACargar);
+            }
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            if (pbArticulo.ImageLocation != seleccionado.Imagenes[seleccionado.Imagenes.Count - 1].ImagenUrl)
+            {
+                string urlACargar = seleccionado.Imagenes[seleccionado.Imagenes.FindIndex(x => x.ImagenUrl == pbArticulo.ImageLocation) + 1].ImagenUrl;
+                cargarImagen(urlACargar);
+            }
+        }
+
+        private void dgvArticulos_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            if (this.dgvArticulos.Columns[e.ColumnIndex].Name == "Precio")
+            {
+                if (e.Value != null)
+                {
+                    decimal aux = (decimal)e.Value;
+                    string precio = aux.ToString();
+                    precio = "$ " + precio;
+                    e.Value = precio;
+                }
             }
         }
     }

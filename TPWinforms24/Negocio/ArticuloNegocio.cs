@@ -17,7 +17,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("SELECT A.Id, A.Nombre, A.Codigo, A.Descripcion, M.Descripcion AS Marca, C.Descripcion AS Categoria, I.ImagenUrl FROM ARTICULOS A INNER JOIN IMAGENES I ON A.Id = I.IdArticulo INNER JOIN MARCAS M ON M.ID = A.IdMarca INNER JOIN CATEGORIAS C ON C.ID = A.IdCategoria");
+                datos.setearConsulta("SELECT DISTINCT A.Id, A.Nombre, A.Codigo, A.Descripcion, M.Descripcion AS Marca, C.Descripcion AS Categoria, A.Precio FROM ARTICULOS A LEFT JOIN MARCAS M ON M.ID = A.IdMarca LEFT JOIN CATEGORIAS C ON C.ID = A.IdCategoria");
                 datos.ejecutarLectura();
                 while (datos.Lector.Read())
                 {
@@ -29,7 +29,10 @@ namespace negocio
                     articulo.Marca = new Marca();
                     articulo.Marca.Descripcion = (string)datos.Lector["Marca"];
                     articulo.Categoria = new Categoria();
-                    articulo.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+                    if (!(datos.Lector["Categoria"] is DBNull))
+                        articulo.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+                    else articulo.Categoria.Descripcion = " ";
+                    articulo.Precio = (decimal)datos.Lector["Precio"];
                     articulo.Imagenes = imagen.listar(articulo.Id);
                     articulos.Add(articulo);
                 }
