@@ -22,3 +22,12 @@ C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\Ne
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.CopyComplete
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.dll
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\Negocio.dll
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\dominio.dll
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\dominio.pdb
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.dll
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.pdb

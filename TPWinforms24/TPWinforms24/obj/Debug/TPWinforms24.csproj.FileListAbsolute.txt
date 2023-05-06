@@ -48,3 +48,19 @@ C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TP
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.exe
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.pdb
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.FormPrincipal.resources
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\TPWinforms24.exe.config
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\TPWinforms24.exe
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\TPWinforms24.pdb
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\dominio.dll
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\Negocio.dll
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\dominio.pdb
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\Negocio.pdb
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.AssemblyReference.cache
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.SuggestedBindingRedirects.cache
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.FormPrincipal.resources
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.Properties.Resources.resources
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.GenerateResource.cache
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.CoreCompileInputs.cache
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.CopyComplete
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.exe
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.pdb
