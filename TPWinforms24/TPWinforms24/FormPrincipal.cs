@@ -59,6 +59,7 @@ namespace TPWinforms24
 
             //}
             btnSiguiente.Enabled = seleccionado.Imagenes.Count > 1 ? true : false;
+            if(seleccionado.Imagenes.Count > 0 )
             cargarImagen(seleccionado.Imagenes[0].ImagenUrl);
             //if (seleccionado.Imagenes.Count > 0)
             //    btnSiguiente.Enabled = true;
@@ -133,6 +134,12 @@ namespace TPWinforms24
             }
             dgvArticulos.DataSource = null;
             dgvArticulos.DataSource = listaFiltrada;
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmAltaArticulo alta = new frmAltaArticulo();
+            alta.ShowDialog();
         }
     }
 }

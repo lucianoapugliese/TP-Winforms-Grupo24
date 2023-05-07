@@ -10,7 +10,7 @@ namespace dominio
    public class Categoria
     {
         [DisplayName("Número")]
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Descripcion { get; set; }
         public override string ToString()
         {

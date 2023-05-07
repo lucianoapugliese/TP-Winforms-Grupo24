@@ -64,3 +64,4 @@ C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\o
 C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.CopyComplete
 C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.exe
 C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.pdb
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaArticulo.resources
