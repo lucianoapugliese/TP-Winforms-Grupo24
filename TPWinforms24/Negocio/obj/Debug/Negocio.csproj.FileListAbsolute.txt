@@ -31,3 +31,12 @@ C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\De
 C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.CopyComplete
 C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.dll
 C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\Negocio.dll
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\dominio.dll
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\Negocio\bin\Debug\dominio.pdb
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.dll
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\Negocio\obj\Debug\Negocio.pdb
