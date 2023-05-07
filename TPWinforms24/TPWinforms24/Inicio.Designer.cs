@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.btnInicio = new System.Windows.Forms.Button();
-            this.tbBienvenida = new System.Windows.Forms.TextBox();
+            this.lblBienvenidos = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnInicio
@@ -39,7 +39,7 @@
             this.btnInicio.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnInicio.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnInicio.Location = new System.Drawing.Point(174, 254);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(141, 51);
             this.btnInicio.TabIndex = 0;
@@ -47,21 +47,19 @@
             this.btnInicio.UseVisualStyleBackColor = false;
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // tbBienvenida
+            // lblBienvenidos
             // 
-            this.tbBienvenida.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbBienvenida.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.tbBienvenida.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBienvenida.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.tbBienvenida.Location = new System.Drawing.Point(111, 92);
-            this.tbBienvenida.Name = "tbBienvenida";
-            this.tbBienvenida.Size = new System.Drawing.Size(258, 35);
-            this.tbBienvenida.TabIndex = 1;
-            this.tbBienvenida.Text = "Bienvenidos al Sistema";
-            this.tbBienvenida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblBienvenidos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblBienvenidos.AutoSize = true;
+            this.lblBienvenidos.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblBienvenidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenidos.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblBienvenidos.Location = new System.Drawing.Point(117, 111);
+            this.lblBienvenidos.Name = "lblBienvenidos";
+            this.lblBienvenidos.Size = new System.Drawing.Size(264, 29);
+            this.lblBienvenidos.TabIndex = 1;
+            this.lblBienvenidos.Text = "Bienvenidos al Sistema";
+            this.lblBienvenidos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Inicio
             // 
@@ -70,12 +68,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnInicio;
-            this.ClientSize = new System.Drawing.Size(485, 369);
-            this.Controls.Add(this.tbBienvenida);
+            this.ClientSize = new System.Drawing.Size(484, 369);
+            this.Controls.Add(this.lblBienvenidos);
             this.Controls.Add(this.btnInicio);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
@@ -87,6 +85,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.TextBox tbBienvenida;
+        private System.Windows.Forms.Label lblBienvenidos;
     }
 }
