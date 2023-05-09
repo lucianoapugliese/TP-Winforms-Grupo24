@@ -69,9 +69,7 @@ namespace TPWinforms24
                         imagenNegocio.agregar(imagenAux);
                     }
                 }
-
                 Close();
-                
             }
             catch (Exception ex)
             {

@@ -147,5 +147,22 @@ namespace TPWinforms24
             alta.ShowDialog();
             cargardgv();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            Articulo seleccionado;
+            try
+            {
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                articuloNegocio.eliminar(seleccionado.Id);
+                cargardgv();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }
