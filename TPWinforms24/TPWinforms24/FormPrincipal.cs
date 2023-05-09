@@ -22,6 +22,11 @@ namespace TPWinforms24
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
+            cargardgv();
+        }
+
+        private void cargardgv()
+        {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             articulos = articuloNegocio.listar();
             dgvArticulos.DataSource = articulos;
@@ -140,6 +145,7 @@ namespace TPWinforms24
         {
             frmAltaArticulo alta = new frmAltaArticulo();
             alta.ShowDialog();
+            cargardgv();
         }
     }
 }

@@ -11,7 +11,7 @@ namespace dominio
     {
         [DisplayName("Número")]
         public int Id { get; set; }
-        public Articulo Articulo { get; set; }
+        public int IdArticulo { get; set; }
         public string ImagenUrl { get; set; }
     }
 }

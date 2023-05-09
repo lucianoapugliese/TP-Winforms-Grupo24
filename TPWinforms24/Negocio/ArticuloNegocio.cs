@@ -74,5 +74,30 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
+        public int consultarUltimoId()
+        {
+            AccesoDatos datos = new AccesoDatos();
+            int id = 0;
+            try
+            {
+                datos.setearConsulta("select max(Id) as Id from Articulos");
+                datos.ejecutarLectura();
+                while (datos.Lector.Read())
+                {
+                    id = (int)datos.Lector["id"];
+                }
+                return id;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+        }
     }
 }

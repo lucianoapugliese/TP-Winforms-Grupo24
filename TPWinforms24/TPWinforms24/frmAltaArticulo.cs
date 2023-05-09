@@ -14,6 +14,7 @@ namespace TPWinforms24
 {
     public partial class frmAltaArticulo : Form
     {
+        List<string> imagenes = new List<string>();
         public frmAltaArticulo()
         {
             InitializeComponent();
@@ -44,8 +45,7 @@ namespace TPWinforms24
             Articulo articulo = new Articulo();
             articulo.Categoria = new Categoria();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-            Marca marcaAux = new Marca();
-            Categoria catAux = new Categoria();
+            int idAux;
             try
             {
                 articulo.Codigo = txtCodigo.Text;
@@ -53,12 +53,23 @@ namespace TPWinforms24
                 articulo.Descripcion = txtDescripcion.Text;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
                 articulo.Marca = (Marca)cboMarca.SelectedItem;
-                marcaAux = (Marca)cboMarca.SelectedItem;
-                articulo.Marca.Id = marcaAux.Id;
-                catAux = (Categoria)cboCategoria.SelectedItem;
-                articulo.Categoria.Id = catAux.Id;
+                articulo.Categoria = (Categoria)cboCategoria.SelectedItem;
                 articuloNegocio.agregar(articulo);
                 MessageBox.Show("Agregado exitosamente");
+                idAux = articuloNegocio.consultarUltimoId();
+
+                if (imagenes.Count > 0)
+                {
+                    Imagen imagenAux = new Imagen();
+                    ImagenNegocio imagenNegocio = new ImagenNegocio();
+                    foreach (string imagen in imagenes)
+                    {
+                        imagenAux.IdArticulo = idAux;
+                        imagenAux.ImagenUrl = imagen;
+                        imagenNegocio.agregar(imagenAux);
+                    }
+                }
+
                 Close();
                 
             }
@@ -66,6 +77,12 @@ namespace TPWinforms24
             {
                 throw ex;
             }
+        }
+
+        private void btnAgregarImagen_Click(object sender, EventArgs e)
+        {
+            imagenes.Add(txtImagen.Text);
+            txtImagen.Clear();
         }
     }
 }

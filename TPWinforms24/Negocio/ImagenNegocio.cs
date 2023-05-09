@@ -23,8 +23,7 @@ namespace negocio
                 {
                     Imagen imagen = new Imagen();
                     imagen.Id = (int)acceso.Lector["Id"];
-                    imagen.Articulo = new Articulo();
-                    imagen.Articulo.Id = (int)acceso.Lector["IdArticulo"];
+                    imagen.IdArticulo = (int)acceso.Lector["IdArticulo"];
                     // Nombre del articulo
                     imagen.ImagenUrl = (string)acceso.Lector["ImagenUrl"];
                     imagenes.Add(imagen);
@@ -56,8 +55,7 @@ namespace negocio
                 {
                     Imagen imagen = new Imagen();
                     imagen.Id = (int)acceso.Lector["Id"];
-                    imagen.Articulo = new Articulo();
-                    imagen.Articulo.Id = (int)acceso.Lector["IdArticulo"];
+                    imagen.IdArticulo = (int)acceso.Lector["IdArticulo"];
                     // Nombre del articulo
                     imagen.ImagenUrl = (string)acceso.Lector["ImagenUrl"];
                     imagenes.Add(imagen);
@@ -73,6 +71,20 @@ namespace negocio
             finally
             {
                 acceso.cerrarConexion();
+            }
+        }
+        public void agregar(Imagen imagen)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("INSERT INTO IMAGENES (IdArticulo, ImagenUrl) VALUES(" + imagen.IdArticulo + ",'" + imagen.ImagenUrl + "')");
+                datos.ejecutarAccion();
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }
