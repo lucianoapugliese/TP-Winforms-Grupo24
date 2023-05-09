@@ -19,8 +19,7 @@ namespace TPWinforms24
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            FormPrincipal principal = new FormPrincipal();
-            principal.ShowDialog();
+            Close();
         }
 
         
