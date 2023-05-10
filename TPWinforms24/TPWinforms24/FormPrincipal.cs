@@ -168,11 +168,15 @@ namespace TPWinforms24
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
             Articulo seleccionado;
+            int id;
             try
             {
                 seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
                 articuloNegocio.eliminar(seleccionado.Id);
+                id = seleccionado.Id;
+                imagenNegocio.eliminar(id);
                 cargardgv();
             }
             catch (Exception ex)
