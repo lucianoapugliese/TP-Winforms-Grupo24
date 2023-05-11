@@ -30,9 +30,11 @@ namespace negocio
                     articulo.Marca.Id = (int)datos.Lector["IdMarca"];
                     articulo.Marca.Descripcion = (string)datos.Lector["Marca"];
                     articulo.Categoria = new Categoria();
-                    articulo.Categoria.Id = (int)datos.Lector["IdCategoria"];
                     if (!(datos.Lector["Categoria"] is DBNull))
+                    {
                         articulo.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+                        articulo.Categoria.Id = (int)datos.Lector["IdCategoria"];
+                    }
                     else articulo.Categoria.Descripcion = " ";
                     decimal DosDecimal;
                     DosDecimal = (decimal)datos.Lector["Precio"];
@@ -63,6 +65,19 @@ namespace negocio
 
             try
             {
+                if (articulo.Marca == null)
+                {
+                    datos.setearConsulta("INSERT INTO ARTICULOS(Codigo, Nombre, Descripcion, Precio, IdCategoria) VALUES('" + articulo.Codigo + "','" + articulo.Nombre + "','" + articulo.Descripcion + "'," + articulo.Precio + "," + articulo.Categoria.Id + ")");
+                }
+                else if (articulo.Categoria == null)
+                {
+                    datos.setearConsulta("INSERT INTO ARTICULOS(Codigo, Nombre, Descripcion, Precio, IdMarca) VALUES('" + articulo.Codigo + "','" + articulo.Nombre + "','" + articulo.Descripcion + "'," + articulo.Precio + "," + articulo.Marca.Id + ")");
+                }
+                else if (articulo.Categoria == null && articulo.Marca == null)
+                {
+                    datos.setearConsulta("INSERT INTO ARTICULOS(Codigo, Nombre, Descripcion, Precio) VALUES('" + articulo.Codigo + "','" + articulo.Nombre + "','" + articulo.Descripcion + "'," + articulo.Precio + "," + ")");
+                }
+                else
                 datos.setearConsulta("INSERT INTO ARTICULOS(Codigo, Nombre, Descripcion, Precio, IdMarca, IdCategoria) VALUES('" + articulo.Codigo + "','" + articulo.Nombre + "','" + articulo.Descripcion + "'," + articulo.Precio + "," + articulo.Marca.Id + "," + articulo.Categoria.Id + ")");
                 datos.ejecutarAccion();
             }

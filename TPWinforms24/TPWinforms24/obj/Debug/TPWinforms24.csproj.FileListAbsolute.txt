@@ -34,3 +34,5 @@ C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TP
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.CopyComplete
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.exe
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.pdb
+C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaMarca.resources
+C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaCategoria.resources

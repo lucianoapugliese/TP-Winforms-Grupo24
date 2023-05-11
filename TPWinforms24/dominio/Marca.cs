@@ -12,7 +12,6 @@ namespace dominio
         [DisplayName("Número")]
         public int Id { get; set; }
         public string Descripcion { get; set; }
-        public int IdArticulo { get; set; }
         public override string ToString()
         {
             return Descripcion;

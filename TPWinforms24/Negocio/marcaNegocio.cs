@@ -10,10 +10,15 @@ namespace negocio
     public class MarcaNegocio
     {
 
+
         public List<Marca> listar()
         {
             List<Marca> marcas = new List<Marca>();
             AccesoDatos acceso = new AccesoDatos();
+            Marca vacia = new Marca();
+            vacia.Id = 0;
+            vacia.Descripcion = string.Empty;
+            marcas.Add(vacia);
 
             try
             {
@@ -40,6 +45,24 @@ namespace negocio
             }
         }
 
+        public void agregar(Marca marca)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta($"INSERT INTO MARCAS VALUES ('{marca.Descripcion}')");
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
         /*
          * listar
          * editar

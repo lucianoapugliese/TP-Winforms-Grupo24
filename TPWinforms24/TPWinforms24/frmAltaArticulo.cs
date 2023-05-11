@@ -75,7 +75,11 @@ namespace TPWinforms24
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
+                if (cboMarca.SelectedIndex == 0) articulo.Marca = null;
+                else
                 articulo.Marca = (Marca)cboMarca.SelectedItem;
+                if (cboCategoria.SelectedIndex == 0) articulo.Categoria = null;
+                else
                 articulo.Categoria = (Categoria)cboCategoria.SelectedItem;
 
                 if (articulo.Id != 0)
@@ -113,6 +117,22 @@ namespace TPWinforms24
         {
             imagenes.Add(txtImagen.Text);
             txtImagen.Clear();
+        }
+
+        private void btnAgregarMarca_Click(object sender, EventArgs e)
+        {
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+            frmAltaMarca frmAltaMarca = new frmAltaMarca();
+            frmAltaMarca.ShowDialog();
+            cboMarca.DataSource = marcaNegocio.listar();
+        }
+
+        private void btnAgregarCategoria_Click(object sender, EventArgs e)
+        {
+            CategoriaNegocio marcaNegocio = new CategoriaNegocio();
+            frmAltaCategoria frmAltaCategoria = new frmAltaCategoria();
+            frmAltaCategoria.ShowDialog();
+            cboCategoria.DataSource = marcaNegocio.listar();
         }
     }
 }

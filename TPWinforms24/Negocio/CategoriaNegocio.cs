@@ -13,6 +13,10 @@ namespace negocio
         {
             List<Categoria> categorias = new List<Categoria>();
             AccesoDatos acceso = new AccesoDatos();
+            Categoria vacia = new Categoria();
+            vacia.Id = 0;
+            vacia.Descripcion = string.Empty;
+            categorias.Add(vacia);
 
             try
             {
@@ -36,6 +40,25 @@ namespace negocio
             finally
             {
                 acceso.cerrarConexion();
+            }
+        }
+        public void agregar(Categoria categoria)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta($"INSERT INTO CATEGORIAS VALUES ('{categoria.Descripcion}')");
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
         }
     }
