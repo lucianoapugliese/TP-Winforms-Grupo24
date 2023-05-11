@@ -38,10 +38,13 @@
             // lblNuevaMarca
             // 
             this.lblNuevaMarca.AutoSize = true;
+            this.lblNuevaMarca.BackColor = System.Drawing.Color.Transparent;
+            this.lblNuevaMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNuevaMarca.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.lblNuevaMarca.Location = new System.Drawing.Point(31, 64);
             this.lblNuevaMarca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNuevaMarca.Name = "lblNuevaMarca";
-            this.lblNuevaMarca.Size = new System.Drawing.Size(40, 13);
+            this.lblNuevaMarca.Size = new System.Drawing.Size(46, 13);
             this.lblNuevaMarca.TabIndex = 0;
             this.lblNuevaMarca.Text = "Marca:";
             // 
@@ -55,24 +58,30 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnAceptar.Location = new System.Drawing.Point(208, 58);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(62, 24);
+            this.btnAceptar.Size = new System.Drawing.Size(70, 24);
             this.btnAceptar.TabIndex = 1;
             this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnCancelar.Location = new System.Drawing.Point(282, 58);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(62, 24);
+            this.btnCancelar.Size = new System.Drawing.Size(76, 24);
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmAltaMarca
