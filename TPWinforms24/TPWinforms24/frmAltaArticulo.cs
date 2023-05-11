@@ -14,10 +14,18 @@ namespace TPWinforms24
 {
     public partial class frmAltaArticulo : Form
     {
-        List<string> imagenes = new List<string>();
+        private List<string> imagenes = new List<string>();
+        private Articulo articulo = null;
         public frmAltaArticulo()
         {
             InitializeComponent();
+        }
+
+        public frmAltaArticulo(Articulo articulo)
+        {
+            InitializeComponent();
+            this.articulo = articulo;
+            Text = "Modificar Artículo";
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -32,7 +40,21 @@ namespace TPWinforms24
             try
             {
                 cboMarca.DataSource = marcaNegocio.listar();
+                cboMarca.ValueMember = "Id";
+                cboMarca.DisplayMember = "Descripcion";
                 cboCategoria.DataSource = categoriaNegocio.listar();
+                cboCategoria.ValueMember = "Id";
+                cboCategoria.DisplayMember = "Descripcion";
+
+                if (articulo != null)
+                {
+                    txtCodigo.Text = articulo.Codigo;
+                    txtNombre.Text = articulo.Nombre;
+                    txtDescripcion.Text = articulo.Descripcion;
+                    txtPrecio.Text = articulo.Precio.ToString();
+                    cboMarca.SelectedValue = articulo.Marca.Id;
+                    cboCategoria.SelectedValue = articulo.Categoria.Id;
+                }
             }
             catch (Exception ex)
             {
@@ -42,21 +64,31 @@ namespace TPWinforms24
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Articulo articulo = new Articulo();
-            articulo.Categoria = new Categoria();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             int idAux;
             try
             {
+                if (articulo == null)
+                    articulo = new Articulo();
+
                 articulo.Codigo = txtCodigo.Text;
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
                 articulo.Marca = (Marca)cboMarca.SelectedItem;
                 articulo.Categoria = (Categoria)cboCategoria.SelectedItem;
-                articuloNegocio.agregar(articulo);
-                MessageBox.Show("Agregado exitosamente");
-                idAux = articuloNegocio.consultarUltimoId();
+
+                if (articulo.Id != 0)
+                {
+                    articuloNegocio.modificar(articulo);
+                    idAux = articulo.Id;
+                }
+                else
+                {
+                    articuloNegocio.agregar(articulo);
+                    MessageBox.Show("Agregado exitosamente");
+                    idAux = articuloNegocio.consultarUltimoId();
+                }
 
                 if (imagenes.Count > 0)
                 {
