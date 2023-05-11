@@ -36,3 +36,23 @@ C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TP
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.pdb
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaMarca.resources
 C:\UTN\2023\1er cuatrimestre\Programación 3\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaCategoria.resources
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\TPWinforms24.exe.config
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\TPWinforms24.exe
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\TPWinforms24.pdb
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\dominio.dll
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\Negocio.dll
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\dominio.pdb
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\bin\Debug\Negocio.pdb
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.AssemblyReference.cache
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.SuggestedBindingRedirects.cache
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.FormPrincipal.resources
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaArticulo.resources
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaCategoria.resources
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaMarca.resources
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.Inicio.resources
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.Properties.Resources.resources
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.GenerateResource.cache
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.CoreCompileInputs.cache
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.CopyComplete
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.exe
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.pdb

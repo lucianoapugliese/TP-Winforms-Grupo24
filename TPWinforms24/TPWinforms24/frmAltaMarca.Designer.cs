@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAltaMarca));
             this.lblNuevaMarca = new System.Windows.Forms.Label();
             this.txtNuevaMarca = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
@@ -37,24 +38,27 @@
             // lblNuevaMarca
             // 
             this.lblNuevaMarca.AutoSize = true;
-            this.lblNuevaMarca.Location = new System.Drawing.Point(53, 72);
+            this.lblNuevaMarca.Location = new System.Drawing.Point(31, 64);
+            this.lblNuevaMarca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNuevaMarca.Name = "lblNuevaMarca";
-            this.lblNuevaMarca.Size = new System.Drawing.Size(48, 16);
+            this.lblNuevaMarca.Size = new System.Drawing.Size(40, 13);
             this.lblNuevaMarca.TabIndex = 0;
             this.lblNuevaMarca.Text = "Marca:";
             // 
             // txtNuevaMarca
             // 
-            this.txtNuevaMarca.Location = new System.Drawing.Point(119, 72);
+            this.txtNuevaMarca.Location = new System.Drawing.Point(89, 58);
+            this.txtNuevaMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNuevaMarca.Name = "txtNuevaMarca";
-            this.txtNuevaMarca.Size = new System.Drawing.Size(143, 22);
+            this.txtNuevaMarca.Size = new System.Drawing.Size(108, 20);
             this.txtNuevaMarca.TabIndex = 0;
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(278, 72);
+            this.btnAceptar.Location = new System.Drawing.Point(208, 58);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(83, 29);
+            this.btnAceptar.Size = new System.Drawing.Size(62, 24);
             this.btnAceptar.TabIndex = 1;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -62,9 +66,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(376, 72);
+            this.btnCancelar.Location = new System.Drawing.Point(282, 58);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(83, 29);
+            this.btnCancelar.Size = new System.Drawing.Size(62, 24);
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -72,16 +77,19 @@
             // 
             // frmAltaMarca
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 153);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(369, 131);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtNuevaMarca);
             this.Controls.Add(this.lblNuevaMarca);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(508, 200);
-            this.MinimumSize = new System.Drawing.Size(508, 200);
+            this.MaximumSize = new System.Drawing.Size(385, 170);
+            this.MinimumSize = new System.Drawing.Size(385, 170);
             this.Name = "frmAltaMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nueva marca";

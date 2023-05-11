@@ -213,5 +213,10 @@ namespace TPWinforms24
             modificar.ShowDialog();
             cargardgv();
         }
+
+        private void lblFiltro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

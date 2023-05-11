@@ -22,3 +22,9 @@ C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\De
 C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.dll
 C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.pdb
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\dominio\bin\Debug\dominio.dll
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\dominio\bin\Debug\dominio.pdb
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.dll
+C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\dominio\obj\Debug\dominio.pdb
