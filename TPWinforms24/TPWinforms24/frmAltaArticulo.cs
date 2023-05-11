@@ -45,15 +45,37 @@ namespace TPWinforms24
                 cboCategoria.DataSource = categoriaNegocio.listar();
                 cboCategoria.ValueMember = "Id";
                 cboCategoria.DisplayMember = "Descripcion";
+                lblImagenArticulo.Visible = false;
+                cboImagenesArticulo.Visible = false;
+                btnEliminarImagen.Visible = false;
 
                 if (articulo != null)
                 {
+                    ImagenNegocio imagenesAux = new ImagenNegocio();
+                    Imagen imagen = new Imagen();
                     txtCodigo.Text = articulo.Codigo;
                     txtNombre.Text = articulo.Nombre;
                     txtDescripcion.Text = articulo.Descripcion;
                     txtPrecio.Text = articulo.Precio.ToString();
                     cboMarca.SelectedValue = articulo.Marca.Id;
                     cboCategoria.SelectedValue = articulo.Categoria.Id;
+                    cboImagenesArticulo.DataSource = imagenesAux.listar(articulo.Id);
+                    cboImagenesArticulo.ValueMember = "Id";
+                    cboImagenesArticulo.DisplayMember = "ImagenUrl";
+                    lblImagenArticulo.Visible = true;
+                    cboImagenesArticulo.Visible = true;
+                    btnEliminarImagen.Visible = true;
+
+                    if (cboImagenesArticulo.SelectedItem != null)
+                    {
+                        imagen = (Imagen)cboImagenesArticulo.SelectedItem;
+                        pbImagenArticulo.Load(imagen.ImagenUrl);
+                    }
+                    else
+                    {
+                        btnEliminarImagen.Enabled = false;
+                        pbImagenArticulo.Visible = false;
+                    }
                 }
             }
             catch (Exception ex)
@@ -133,6 +155,42 @@ namespace TPWinforms24
             frmAltaCategoria frmAltaCategoria = new frmAltaCategoria();
             frmAltaCategoria.ShowDialog();
             cboCategoria.DataSource = marcaNegocio.listar();
+        }
+
+        private void btnEliminarImagen_Click(object sender, EventArgs e)
+        {
+            ImagenNegocio imagen = new ImagenNegocio();
+            Imagen imagenAux = null;
+
+            try
+            {
+                if (cboImagenesArticulo.Items != null && cboImagenesArticulo.SelectedItem != null)
+                {
+                    imagenAux = (Imagen)cboImagenesArticulo.SelectedItem;
+                    imagen.eliminarImagen(imagenAux.Id);
+                }
+
+                cboImagenesArticulo.DataSource = imagen.listar(articulo.Id);
+                cboImagenesArticulo.ValueMember = "Id";
+                cboImagenesArticulo.DisplayMember = "ImagenUrl";
+
+                if (cboImagenesArticulo.Items.Count > 0)
+                {
+                    imagenAux = (Imagen)cboImagenesArticulo.SelectedItem;
+                    pbImagenArticulo.Load(imagenAux.ImagenUrl);
+                    pbImagenArticulo.Visible = true;
+                    btnEliminarImagen.Enabled = true;
+                }
+                else
+                {
+                    pbImagenArticulo.Visible = false;
+                    btnEliminarImagen.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

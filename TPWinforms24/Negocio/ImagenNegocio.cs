@@ -103,5 +103,19 @@ namespace negocio
                 throw ex;
             }
         }
+        public void eliminarImagen(int idImagen)
+        {
+            try
+            {
+                AccesoDatos datos = new AccesoDatos();
+                datos.setearConsulta($"delete from Imagenes where Id = {idImagen}");
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -48,6 +48,11 @@
             this.txtImagen = new System.Windows.Forms.TextBox();
             this.btnAgregarMarca = new System.Windows.Forms.Button();
             this.btnAgregarCategoria = new System.Windows.Forms.Button();
+            this.lblImagenArticulo = new System.Windows.Forms.Label();
+            this.cboImagenesArticulo = new System.Windows.Forms.ComboBox();
+            this.btnEliminarImagen = new System.Windows.Forms.Button();
+            this.pbImagenArticulo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenArticulo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodigo
@@ -207,18 +212,18 @@
             this.lblImagen.AutoSize = true;
             this.lblImagen.BackColor = System.Drawing.Color.Transparent;
             this.lblImagen.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblImagen.Location = new System.Drawing.Point(56, 346);
+            this.lblImagen.Location = new System.Drawing.Point(22, 320);
             this.lblImagen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(52, 13);
+            this.lblImagen.Size = new System.Drawing.Size(91, 13);
             this.lblImagen.TabIndex = 8;
-            this.lblImagen.Text = "Imagen:";
+            this.lblImagen.Text = "Imagen nueva:";
             // 
             // btnAgregarImagen
             // 
             this.btnAgregarImagen.BackColor = System.Drawing.Color.Transparent;
             this.btnAgregarImagen.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnAgregarImagen.Location = new System.Drawing.Point(299, 341);
+            this.btnAgregarImagen.Location = new System.Drawing.Point(299, 310);
             this.btnAgregarImagen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregarImagen.Name = "btnAgregarImagen";
             this.btnAgregarImagen.Size = new System.Drawing.Size(88, 23);
@@ -229,7 +234,7 @@
             // 
             // txtImagen
             // 
-            this.txtImagen.Location = new System.Drawing.Point(132, 344);
+            this.txtImagen.Location = new System.Drawing.Point(132, 313);
             this.txtImagen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtImagen.Name = "txtImagen";
             this.txtImagen.Size = new System.Drawing.Size(140, 20);
@@ -242,7 +247,7 @@
             this.btnAgregarMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarMarca.ForeColor = System.Drawing.Color.MidnightBlue;
             this.btnAgregarMarca.Location = new System.Drawing.Point(288, 132);
-            this.btnAgregarMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarMarca.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarMarca.Name = "btnAgregarMarca";
             this.btnAgregarMarca.Size = new System.Drawing.Size(26, 20);
             this.btnAgregarMarca.TabIndex = 4;
@@ -257,7 +262,7 @@
             this.btnAgregarCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarCategoria.ForeColor = System.Drawing.Color.MidnightBlue;
             this.btnAgregarCategoria.Location = new System.Drawing.Point(288, 164);
-            this.btnAgregarCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarCategoria.Name = "btnAgregarCategoria";
             this.btnAgregarCategoria.Size = new System.Drawing.Size(26, 20);
             this.btnAgregarCategoria.TabIndex = 6;
@@ -265,12 +270,57 @@
             this.btnAgregarCategoria.UseVisualStyleBackColor = false;
             this.btnAgregarCategoria.Click += new System.EventHandler(this.btnAgregarCategoria_Click);
             // 
+            // lblImagenArticulo
+            // 
+            this.lblImagenArticulo.AutoSize = true;
+            this.lblImagenArticulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblImagenArticulo.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblImagenArticulo.Location = new System.Drawing.Point(22, 365);
+            this.lblImagenArticulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblImagenArticulo.Name = "lblImagenArticulo";
+            this.lblImagenArticulo.Size = new System.Drawing.Size(65, 13);
+            this.lblImagenArticulo.TabIndex = 10;
+            this.lblImagenArticulo.Text = "Imagenes:";
+            // 
+            // cboImagenesArticulo
+            // 
+            this.cboImagenesArticulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboImagenesArticulo.FormattingEnabled = true;
+            this.cboImagenesArticulo.Location = new System.Drawing.Point(132, 365);
+            this.cboImagenesArticulo.Name = "cboImagenesArticulo";
+            this.cboImagenesArticulo.Size = new System.Drawing.Size(140, 21);
+            this.cboImagenesArticulo.TabIndex = 11;
+            // 
+            // btnEliminarImagen
+            // 
+            this.btnEliminarImagen.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminarImagen.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnEliminarImagen.Location = new System.Drawing.Point(299, 365);
+            this.btnEliminarImagen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnEliminarImagen.Name = "btnEliminarImagen";
+            this.btnEliminarImagen.Size = new System.Drawing.Size(88, 23);
+            this.btnEliminarImagen.TabIndex = 12;
+            this.btnEliminarImagen.Text = "Eliminar";
+            this.btnEliminarImagen.UseVisualStyleBackColor = false;
+            this.btnEliminarImagen.Click += new System.EventHandler(this.btnEliminarImagen_Click);
+            // 
+            // pbImagenArticulo
+            // 
+            this.pbImagenArticulo.Location = new System.Drawing.Point(355, 40);
+            this.pbImagenArticulo.Name = "pbImagenArticulo";
+            this.pbImagenArticulo.Size = new System.Drawing.Size(207, 230);
+            this.pbImagenArticulo.TabIndex = 13;
+            this.pbImagenArticulo.TabStop = false;
+            // 
             // frmAltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(574, 483);
+            this.Controls.Add(this.pbImagenArticulo);
+            this.Controls.Add(this.btnEliminarImagen);
+            this.Controls.Add(this.cboImagenesArticulo);
+            this.Controls.Add(this.lblImagenArticulo);
             this.Controls.Add(this.btnAgregarCategoria);
             this.Controls.Add(this.btnAgregarMarca);
             this.Controls.Add(this.txtImagen);
@@ -297,6 +347,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo artículo";
             this.Load += new System.EventHandler(this.frmAltaArticulo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,5 +374,9 @@
         private System.Windows.Forms.TextBox txtImagen;
         private System.Windows.Forms.Button btnAgregarMarca;
         private System.Windows.Forms.Button btnAgregarCategoria;
+        private System.Windows.Forms.Label lblImagenArticulo;
+        private System.Windows.Forms.ComboBox cboImagenesArticulo;
+        private System.Windows.Forms.Button btnEliminarImagen;
+        private System.Windows.Forms.PictureBox pbImagenArticulo;
     }
 }

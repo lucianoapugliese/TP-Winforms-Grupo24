@@ -56,3 +56,5 @@ C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\
 C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.csproj.CopyComplete
 C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.exe
 C:\Users\Majo Illanes\Desktop\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.pdb
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaCategoria.resources
+C:\Users\Matias Islas\Desktop\TP\TP-Winforms-Grupo24\TPWinforms24\TPWinforms24\obj\Debug\TPWinforms24.frmAltaMarca.resources
