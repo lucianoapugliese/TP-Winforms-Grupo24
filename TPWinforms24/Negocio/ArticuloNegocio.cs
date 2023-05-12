@@ -27,8 +27,12 @@ namespace negocio
                     articulo.Codigo = (string)datos.Lector["Codigo"];
                     articulo.Descripcion = (string)datos.Lector["Descripcion"];
                     articulo.Marca = new Marca();
-                    articulo.Marca.Id = (int)datos.Lector["IdMarca"];
-                    articulo.Marca.Descripcion = (string)datos.Lector["Marca"];
+                    if (!(datos.Lector["Marca"] is DBNull))
+                    {
+                        articulo.Marca.Id = (int)datos.Lector["IdMarca"];
+                        articulo.Marca.Descripcion = (string)datos.Lector["Marca"];
+                    }
+                    else articulo.Marca.Descripcion = " ";
                     articulo.Categoria = new Categoria();
                     if (!(datos.Lector["Categoria"] is DBNull))
                     {
@@ -78,7 +82,7 @@ namespace negocio
                     datos.setearConsulta("INSERT INTO ARTICULOS(Codigo, Nombre, Descripcion, Precio) VALUES('" + articulo.Codigo + "','" + articulo.Nombre + "','" + articulo.Descripcion + "'," + articulo.Precio + "," + ")");
                 }
                 else
-                datos.setearConsulta("INSERT INTO ARTICULOS(Codigo, Nombre, Descripcion, Precio, IdMarca, IdCategoria) VALUES('" + articulo.Codigo + "','" + articulo.Nombre + "','" + articulo.Descripcion + "'," + articulo.Precio + "," + articulo.Marca.Id + "," + articulo.Categoria.Id + ")");
+                    datos.setearConsulta("INSERT INTO ARTICULOS(Codigo, Nombre, Descripcion, Precio, IdMarca, IdCategoria) VALUES('" + articulo.Codigo + "','" + articulo.Nombre + "','" + articulo.Descripcion + "'," + articulo.Precio + "," + articulo.Marca.Id + "," + articulo.Categoria.Id + ")");
                 datos.ejecutarAccion();
             }
             catch (Exception ex)

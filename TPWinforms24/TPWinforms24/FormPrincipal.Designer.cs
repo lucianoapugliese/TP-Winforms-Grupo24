@@ -120,7 +120,8 @@
             // btnAnterior
             // 
             this.btnAnterior.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnterior.ForeColor = System.Drawing.Color.Navy;
             this.btnAnterior.Location = new System.Drawing.Point(728, 416);
             this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnterior.Name = "btnAnterior";
@@ -133,7 +134,8 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.ForeColor = System.Drawing.Color.Navy;
             this.btnSiguiente.Location = new System.Drawing.Point(897, 416);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
@@ -147,9 +149,12 @@
             // 
             this.lblFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFiltro.AutoSize = true;
+            this.lblFiltro.BackColor = System.Drawing.Color.Transparent;
+            this.lblFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFiltro.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.lblFiltro.Location = new System.Drawing.Point(12, 15);
             this.lblFiltro.Name = "lblFiltro";
-            this.lblFiltro.Size = new System.Drawing.Size(64, 13);
+            this.lblFiltro.Size = new System.Drawing.Size(78, 13);
             this.lblFiltro.TabIndex = 3;
             this.lblFiltro.Text = "Filtro rápido:";
             this.lblFiltro.Click += new System.EventHandler(this.lblFiltro_Click);
@@ -166,6 +171,8 @@
             // btnFiltro
             // 
             this.btnFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltro.ForeColor = System.Drawing.Color.Navy;
             this.btnFiltro.Location = new System.Drawing.Point(608, 480);
             this.btnFiltro.Name = "btnFiltro";
             this.btnFiltro.Size = new System.Drawing.Size(75, 23);
@@ -202,9 +209,12 @@
             // 
             this.lblCampo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCampo.AutoSize = true;
+            this.lblCampo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCampo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCampo.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.lblCampo.Location = new System.Drawing.Point(17, 483);
             this.lblCampo.Name = "lblCampo";
-            this.lblCampo.Size = new System.Drawing.Size(43, 13);
+            this.lblCampo.Size = new System.Drawing.Size(49, 13);
             this.lblCampo.TabIndex = 7;
             this.lblCampo.Text = "Campo:";
             // 
@@ -222,9 +232,12 @@
             // 
             this.lblCriterio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCriterio.AutoSize = true;
+            this.lblCriterio.BackColor = System.Drawing.Color.Transparent;
+            this.lblCriterio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCriterio.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.lblCriterio.Location = new System.Drawing.Point(217, 483);
             this.lblCriterio.Name = "lblCriterio";
-            this.lblCriterio.Size = new System.Drawing.Size(42, 13);
+            this.lblCriterio.Size = new System.Drawing.Size(51, 13);
             this.lblCriterio.TabIndex = 9;
             this.lblCriterio.Text = "Criterio:";
             // 
@@ -241,9 +254,12 @@
             // 
             this.lblFiltroAvanzado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFiltroAvanzado.AutoSize = true;
+            this.lblFiltroAvanzado.BackColor = System.Drawing.Color.Transparent;
+            this.lblFiltroAvanzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFiltroAvanzado.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.lblFiltroAvanzado.Location = new System.Drawing.Point(429, 484);
             this.lblFiltroAvanzado.Name = "lblFiltroAvanzado";
-            this.lblFiltroAvanzado.Size = new System.Drawing.Size(32, 13);
+            this.lblFiltroAvanzado.Size = new System.Drawing.Size(39, 13);
             this.lblFiltroAvanzado.TabIndex = 11;
             this.lblFiltroAvanzado.Text = "Filtro:";
             // 
