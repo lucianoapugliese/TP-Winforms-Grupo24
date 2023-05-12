@@ -39,6 +39,7 @@ namespace TPWinforms24
             CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
             try
             {
+                cargarImagen("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPFc3VTd9s2JUvf60H5XrNb0nl9Fr2Krfd3v-37M5MiAdEqO9T");
                 cboMarca.DataSource = marcaNegocio.listar();
                 cboMarca.ValueMember = "Id";
                 cboMarca.DisplayMember = "Descripcion";
@@ -190,6 +191,24 @@ namespace TPWinforms24
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+
+        private void txtImagen_Leave(object sender, EventArgs e)
+        {
+            if (txtImagen.Text == string.Empty) cargarImagen("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPFc3VTd9s2JUvf60H5XrNb0nl9Fr2Krfd3v-37M5MiAdEqO9T");
+            else cargarImagen(txtImagen.Text);
+        }
+        private void cargarImagen(string url)
+        {
+            try
+            {
+                pbImagenArticulo.Load(url);
+            }
+            catch (Exception ex)
+            {
+
+                pbImagenArticulo.Load("https://www.redeszone.net/app/uploads-redeszone.net/2021/09/Error-404-01-e1633683457508.jpg");
             }
         }
     }
