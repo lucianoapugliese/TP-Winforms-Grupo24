@@ -309,6 +309,7 @@
             this.pbImagenArticulo.Location = new System.Drawing.Point(355, 40);
             this.pbImagenArticulo.Name = "pbImagenArticulo";
             this.pbImagenArticulo.Size = new System.Drawing.Size(207, 230);
+            this.pbImagenArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImagenArticulo.TabIndex = 13;
             this.pbImagenArticulo.TabStop = false;
             // 
@@ -316,7 +317,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 483);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(593, 483);
             this.Controls.Add(this.pbImagenArticulo);
             this.Controls.Add(this.btnEliminarImagen);
             this.Controls.Add(this.cboImagenesArticulo);

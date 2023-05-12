@@ -41,7 +41,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnCancelar.Location = new System.Drawing.Point(281, 50);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(77, 24);
             this.btnCancelar.TabIndex = 2;
@@ -55,7 +55,7 @@
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnAceptar.Location = new System.Drawing.Point(208, 50);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(69, 24);
             this.btnAceptar.TabIndex = 1;
@@ -66,7 +66,7 @@
             // txtNuevaCategoria
             // 
             this.txtNuevaCategoria.Location = new System.Drawing.Point(88, 50);
-            this.txtNuevaCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNuevaCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.txtNuevaCategoria.Name = "txtNuevaCategoria";
             this.txtNuevaCategoria.Size = new System.Drawing.Size(108, 20);
             this.txtNuevaCategoria.TabIndex = 0;
@@ -95,7 +95,7 @@
             this.Controls.Add(this.txtNuevaCategoria);
             this.Controls.Add(this.lblNuevaCategoria);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(385, 170);
             this.MinimumSize = new System.Drawing.Size(385, 170);
