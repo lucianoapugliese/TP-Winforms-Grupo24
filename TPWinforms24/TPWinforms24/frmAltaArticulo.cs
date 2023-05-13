@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TPWinforms24
 {
@@ -16,6 +17,8 @@ namespace TPWinforms24
     {
         private List<string> imagenes = new List<string>();
         private Articulo articulo = null;
+        private ImagenNegocio imagenesAux = new ImagenNegocio();
+        private Imagen imagen = new Imagen();
         public frmAltaArticulo()
         {
             InitializeComponent();
@@ -60,23 +63,7 @@ namespace TPWinforms24
                     txtPrecio.Text = articulo.Precio.ToString();
                     cboMarca.SelectedValue = articulo.Marca.Id;
                     cboCategoria.SelectedValue = articulo.Categoria.Id;
-                    cboImagenesArticulo.DataSource = imagenesAux.listar(articulo.Id);
-                    cboImagenesArticulo.ValueMember = "Id";
-                    cboImagenesArticulo.DisplayMember = "ImagenUrl";
-                    lblImagenArticulo.Visible = true;
-                    cboImagenesArticulo.Visible = true;
-                    btnEliminarImagen.Visible = true;
-
-                    if (cboImagenesArticulo.SelectedItem != null)
-                    {
-                        imagen = (Imagen)cboImagenesArticulo.SelectedItem;
-                        pbImagenArticulo.Load(imagen.ImagenUrl);
-                    }
-                    else
-                    {
-                        btnEliminarImagen.Enabled = false;
-                        pbImagenArticulo.Visible = false;
-                    }
+                    cargarImagenCbo();
                 }
             }
             catch (Exception ex)
@@ -165,28 +152,12 @@ namespace TPWinforms24
 
             try
             {
-                if (cboImagenesArticulo.Items != null && cboImagenesArticulo.SelectedItem != null)
+                if ((cboImagenesArticulo.Items != null && cboImagenesArticulo.SelectedItem != null))
                 {
                     imagenAux = (Imagen)cboImagenesArticulo.SelectedItem;
                     imagen.eliminarImagen(imagenAux.Id);
                 }
-
-                cboImagenesArticulo.DataSource = imagen.listar(articulo.Id);
-                cboImagenesArticulo.ValueMember = "Id";
-                cboImagenesArticulo.DisplayMember = "ImagenUrl";
-
-                if (cboImagenesArticulo.Items.Count > 0)
-                {
-                    imagenAux = (Imagen)cboImagenesArticulo.SelectedItem;
-                    pbImagenArticulo.Load(imagenAux.ImagenUrl);
-                    pbImagenArticulo.Visible = true;
-                    btnEliminarImagen.Enabled = true;
-                }
-                else
-                {
-                    pbImagenArticulo.Visible = false;
-                    btnEliminarImagen.Enabled = false;
-                }
+                cargarImagenCbo();
             }
             catch (Exception ex)
             {
@@ -207,8 +178,35 @@ namespace TPWinforms24
             }
             catch (Exception ex)
             {
-
                 pbImagenArticulo.Load("https://www.redeszone.net/app/uploads-redeszone.net/2021/09/Error-404-01-e1633683457508.jpg");
+            }
+        }
+
+        private void cboImagenesArticulo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            imagen = (Imagen)cboImagenesArticulo.SelectedItem;
+            //if (imagen.ImagenUrl != "") 
+            //pbImagenArticulo.Load(imagen.ImagenUrl);
+            cargarImagen(imagen.ImagenUrl);
+        }
+        private void cargarImagenCbo()
+        {
+            cboImagenesArticulo.DataSource = imagenesAux.listar(articulo.Id);
+            cboImagenesArticulo.ValueMember = "Id";
+            cboImagenesArticulo.DisplayMember = "ImagenUrl";
+            lblImagenArticulo.Visible = true;
+            cboImagenesArticulo.Visible = true;
+            btnEliminarImagen.Visible = true;
+
+            if (cboImagenesArticulo.SelectedItem != null)
+            {
+                imagen = (Imagen)cboImagenesArticulo.SelectedItem;
+                cargarImagen(imagen.ImagenUrl);
+            }
+            else
+            {
+                btnEliminarImagen.Enabled = false;
+                pbImagenArticulo.Visible = false;
             }
         }
     }
