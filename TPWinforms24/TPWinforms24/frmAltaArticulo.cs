@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TPWinforms24
 {
@@ -78,6 +79,10 @@ namespace TPWinforms24
             int idAux;
             try
             {
+                if (validarCargaTxt())
+                    return;
+                if (validarCargaCbo())
+                    return;
                 if (articulo == null)
                     articulo = new Articulo();
 
@@ -185,8 +190,6 @@ namespace TPWinforms24
         private void cboImagenesArticulo_SelectedIndexChanged(object sender, EventArgs e)
         {
             imagen = (Imagen)cboImagenesArticulo.SelectedItem;
-            //if (imagen.ImagenUrl != "") 
-            //pbImagenArticulo.Load(imagen.ImagenUrl);
             cargarImagen(imagen.ImagenUrl);
         }
         private void cargarImagenCbo()
@@ -208,6 +211,64 @@ namespace TPWinforms24
                 btnEliminarImagen.Enabled = false;
                 pbImagenArticulo.Visible = false;
             }
+        }
+
+        public bool validarCargaCbo()
+        {
+            if(cboCategoria.SelectedIndex < 1)
+            {
+                MessageBox.Show("Seleccione una categoría.");
+                return true;
+            }            
+            if(cboMarca.SelectedIndex < 1)
+            {
+                MessageBox.Show("Seleccione una Marca.");
+                return true;
+            }
+            return false;
+        }
+
+        public bool validarCargaTxt()
+        {
+            if (txtCodigo.Text == "")
+            {
+                txtCodigo.BackColor = Color.FromArgb(255, 255, 128, 128);
+                return true;
+            }
+            if (txtNombre.Text == "")
+            {
+                txtNombre.BackColor = Color.FromArgb(255, 255, 128, 128);
+                return true;
+            }
+            if (txtDescripcion.Text == "")
+            {
+                txtDescripcion.BackColor = Color.FromArgb(255, 255, 128, 128);
+                return true;
+            }
+            if (string.IsNullOrEmpty(txtPrecio.Text))
+            {
+                txtPrecio.BackColor = Color.FromArgb(255, 255, 128, 128);
+                return true;
+            }
+            if (!(soloNumeros(txtPrecio.Text)))
+            {
+                MessageBox.Show("Por favor escriba solo números para el precio");
+                return true;
+            }
+            txtCodigo.BackColor = System.Drawing.SystemColors.Control;
+            txtNombre.BackColor = System.Drawing.SystemColors.Control;
+            txtDescripcion.BackColor = System.Drawing.SystemColors.Control; 
+            txtPrecio.BackColor = System.Drawing.SystemColors.Control;
+            return false;
+        }
+        private bool soloNumeros(string cadena)
+        {
+            foreach (char caracter in cadena)
+            {
+                if (!(char.IsNumber(caracter)))
+                    return false;
+            }
+            return true;
         }
     }
 }
