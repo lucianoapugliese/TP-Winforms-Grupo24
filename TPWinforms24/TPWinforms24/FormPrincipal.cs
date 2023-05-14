@@ -37,6 +37,7 @@ namespace TPWinforms24
             articulos = articuloNegocio.listar();
             dgvArticulos.DataSource = articulos;
             //dgvArticulos.Columns[""]
+            dgvArticulos.Columns["Descripcion"].Visible = false;
             btnAnterior.Enabled = false;
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             btnSiguiente.Enabled = seleccionado.Imagenes.Count > 1 ? true : false;
@@ -64,6 +65,7 @@ namespace TPWinforms24
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            txtDescripcion.Text = seleccionado.Descripcion.ToString();
             //foreach (Imagen item in seleccionado.Imagenes)
             //{
             //    cargarImagen(item.ImagenUrl);

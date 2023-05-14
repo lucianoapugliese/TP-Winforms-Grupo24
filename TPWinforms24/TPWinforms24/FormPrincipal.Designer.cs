@@ -50,6 +50,7 @@
             this.lblFiltroAvanzado = new System.Windows.Forms.Label();
             this.txtFiltroAvanzado = new System.Windows.Forms.TextBox();
             this.btnModificar = new System.Windows.Forms.Button();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbArticulo)).BeginInit();
             this.SuspendLayout();
@@ -99,7 +100,7 @@
             this.dgvArticulos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.RosyBrown;
             this.dgvArticulos.RowTemplate.Height = 24;
             this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvArticulos.Size = new System.Drawing.Size(668, 370);
+            this.dgvArticulos.Size = new System.Drawing.Size(544, 370);
             this.dgvArticulos.TabIndex = 1;
             this.dgvArticulos.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvArticulos_CellFormatting);
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
@@ -108,10 +109,10 @@
             // 
             this.pbArticulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbArticulo.BackColor = System.Drawing.Color.Transparent;
-            this.pbArticulo.Location = new System.Drawing.Point(688, 37);
+            this.pbArticulo.Location = new System.Drawing.Point(572, 42);
             this.pbArticulo.Margin = new System.Windows.Forms.Padding(2);
             this.pbArticulo.Name = "pbArticulo";
-            this.pbArticulo.Size = new System.Drawing.Size(342, 370);
+            this.pbArticulo.Size = new System.Drawing.Size(388, 352);
             this.pbArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbArticulo.TabIndex = 1;
             this.pbArticulo.TabStop = false;
@@ -122,7 +123,7 @@
             this.btnAnterior.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnterior.ForeColor = System.Drawing.Color.Navy;
-            this.btnAnterior.Location = new System.Drawing.Point(728, 416);
+            this.btnAnterior.Location = new System.Drawing.Point(576, 440);
             this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(94, 41);
@@ -136,7 +137,7 @@
             this.btnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.ForeColor = System.Drawing.Color.Navy;
-            this.btnSiguiente.Location = new System.Drawing.Point(897, 416);
+            this.btnSiguiente.Location = new System.Drawing.Point(801, 440);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(94, 41);
@@ -173,7 +174,7 @@
             this.btnFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltro.ForeColor = System.Drawing.Color.Navy;
-            this.btnFiltro.Location = new System.Drawing.Point(608, 480);
+            this.btnFiltro.Location = new System.Drawing.Point(595, 508);
             this.btnFiltro.Name = "btnFiltro";
             this.btnFiltro.Size = new System.Drawing.Size(75, 23);
             this.btnFiltro.TabIndex = 3;
@@ -212,7 +213,7 @@
             this.lblCampo.BackColor = System.Drawing.Color.Transparent;
             this.lblCampo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCampo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblCampo.Location = new System.Drawing.Point(17, 483);
+            this.lblCampo.Location = new System.Drawing.Point(4, 511);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(49, 13);
             this.lblCampo.TabIndex = 7;
@@ -222,7 +223,7 @@
             // 
             this.cboCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCampo.FormattingEnabled = true;
-            this.cboCampo.Location = new System.Drawing.Point(65, 479);
+            this.cboCampo.Location = new System.Drawing.Point(52, 507);
             this.cboCampo.Name = "cboCampo";
             this.cboCampo.Size = new System.Drawing.Size(121, 21);
             this.cboCampo.TabIndex = 8;
@@ -235,7 +236,7 @@
             this.lblCriterio.BackColor = System.Drawing.Color.Transparent;
             this.lblCriterio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCriterio.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblCriterio.Location = new System.Drawing.Point(217, 483);
+            this.lblCriterio.Location = new System.Drawing.Point(204, 511);
             this.lblCriterio.Name = "lblCriterio";
             this.lblCriterio.Size = new System.Drawing.Size(51, 13);
             this.lblCriterio.TabIndex = 9;
@@ -245,7 +246,7 @@
             // 
             this.cboCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCriterio.FormattingEnabled = true;
-            this.cboCriterio.Location = new System.Drawing.Point(265, 479);
+            this.cboCriterio.Location = new System.Drawing.Point(252, 507);
             this.cboCriterio.Name = "cboCriterio";
             this.cboCriterio.Size = new System.Drawing.Size(121, 21);
             this.cboCriterio.TabIndex = 10;
@@ -257,7 +258,7 @@
             this.lblFiltroAvanzado.BackColor = System.Drawing.Color.Transparent;
             this.lblFiltroAvanzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFiltroAvanzado.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblFiltroAvanzado.Location = new System.Drawing.Point(429, 484);
+            this.lblFiltroAvanzado.Location = new System.Drawing.Point(416, 512);
             this.lblFiltroAvanzado.Name = "lblFiltroAvanzado";
             this.lblFiltroAvanzado.Size = new System.Drawing.Size(39, 13);
             this.lblFiltroAvanzado.TabIndex = 11;
@@ -266,7 +267,7 @@
             // txtFiltroAvanzado
             // 
             this.txtFiltroAvanzado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtFiltroAvanzado.Location = new System.Drawing.Point(467, 480);
+            this.txtFiltroAvanzado.Location = new System.Drawing.Point(454, 508);
             this.txtFiltroAvanzado.Name = "txtFiltroAvanzado";
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(122, 20);
             this.txtFiltroAvanzado.TabIndex = 12;
@@ -283,12 +284,22 @@
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(572, 399);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.ReadOnly = true;
+            this.txtDescripcion.Size = new System.Drawing.Size(388, 22);
+            this.txtDescripcion.TabIndex = 14;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1019, 540);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.txtFiltroAvanzado);
             this.Controls.Add(this.lblFiltroAvanzado);
@@ -336,6 +347,7 @@
         private System.Windows.Forms.Label lblFiltroAvanzado;
         private System.Windows.Forms.TextBox txtFiltroAvanzado;
         private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.TextBox txtDescripcion;
     }
 }
 
