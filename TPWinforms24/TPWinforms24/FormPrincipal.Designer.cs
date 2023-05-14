@@ -123,7 +123,7 @@
             this.btnAnterior.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnterior.ForeColor = System.Drawing.Color.Navy;
-            this.btnAnterior.Location = new System.Drawing.Point(576, 440);
+            this.btnAnterior.Location = new System.Drawing.Point(649, 440);
             this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(94, 41);
